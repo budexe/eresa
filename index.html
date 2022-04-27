@@ -6,6 +6,12 @@
 <title>index page</title>
 <style>
 
+ul {
+list-style-type: none;
+  margin: 0;
+padding: 0;
+}
+
 body {
 background-image: url(https://www.toptal.com/designers/subtlepatterns/uploads/blue-snow.png);
 }
@@ -15,6 +21,9 @@ table, th, td {
 
 table {
   width: 100%;
+}
+li {
+  margin-bottom: 20px;
 }
 a {
   text-decoration: none;
@@ -56,6 +65,47 @@ a:active {
   background-color: white;
 }
 
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
 </style>
 </head>
 
@@ -63,6 +113,12 @@ a:active {
   <h1>it's me. i'm matthew (the better one).</h1>
 
   <img src="My project(6).png" width=100/>
+
+  <ul>
+  <li><a href="text.html">text page</a></li>
+  <li><a href="#">another page</a></li>
+
+  </ul>
 
   <button class="collapsible">monday thoughts</button>
 <div class="content">
@@ -73,13 +129,19 @@ a:active {
 <div class="content">
 <p>i don't remember the last time i didn't feel tired. it's a perpetual cycle of "i just have to make it through this week" every week. how do people run for enjoyment? what makes it fun for them? what motivates them to keep doing it? why run if you're going to end up back where you started? doesn't that defeat the purpose of running? </p>
 </div>
+<br/>
+<button class="collapsible">wednesday thoughts</button>
+<div class="content">
+<p>Now, I don't know if you've been following the news, but I've been keeping my ears open, and it seems like <i>everyone</i>, <i>everywhere</i>, is super-mad about <i>everything</i>, <i><b>all the time</b></i>. I try to stay a little optimistic, even though I will admit, things are getting pretty sticky. -- john mulaney</p>
+</div>
 
 
-<p>
-<a href="dummy.html">the shaq zone</a>
-</p>
+<a href="dummy.html">
+<img src="156-1562929_auto-insurance-trusted-by-shaq-the-general.jpg" width="200px"/>
+</a>
 
-<a href="http://corndogoncorndog.com">do not click</a>
+
+<a href="http://corndogoncorndog.com">want a corn dog?</a>
 
 
 <script>
