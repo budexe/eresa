@@ -39,6 +39,54 @@ color: white;
 a:active {
   background:red;
 }
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 8px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-family: serif;
+  font-size: 20px;
+  font-style:
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: white;
+}
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+
+#shaq {
+  text-decoration: none;
+  padding: none;
+  border: none;
+  border-radius: none;
+  background: transparent;
+}
+
+#shaq:hover{
+background: transparent;
+color: none;
+}
+
+#shaq:active {
+  background:none;
+}
 
 </style>
 </head>
@@ -68,6 +116,23 @@ a:active {
 
 <a href="http://corndogoncorndog.com">you look stressed. have a corn dog</a>
 
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+</script>
 
 </body>
 </html>
