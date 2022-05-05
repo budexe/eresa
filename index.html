@@ -123,6 +123,41 @@ body {
   }*/
 }
 
+#bob {
+  height:200px;
+  position:relative;
+  margin-bottom: 100px;
+  margin-top: 20px;
+}
+#box1 {
+  background: linear-gradient(to top, #005aa7, #fffde4);
+  width: 40%;
+  height: 257px;
+  border: 3px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  float: left;
+  margin-left: 50px;
+}
+
+#box2 {
+  background: linear-gradient(to bottom, #ed213a, #93291e);
+  border: 3px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+#box3 {
+background: linear-gradient(to right, #636363, #a2ab58);
+  border: 3px solid black;
+  border-radius: 10px;
+  width: 40%;
+  float: right;
+  margin-right: 50px;
+}
+
 </style>
 </head>
 
@@ -137,51 +172,37 @@ body {
       </div>
     </div>
 
+<div id="bob">
 
-<h2>stuff for mister chad</h2>
+<div id="box1">
+  <h1>stuff for mister chad</h1>
   <ul>
   <li><a href="text.html">text page</a></li>
   <li><a href="quotes.html">quote page</a></li>
-
+  <li><a href="boxes.html">box page</a></li>
   </ul>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
+</div>
 
 
-  <h2>other stuff</h2>
-
-<br/>
+<div id="box3">
 <a href="dummy.html"  id="shaq">
-<img src="156-1562929_auto-insurance-trusted-by-shaq-the-general.jpg" width="200px"/>
-</a>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-
-<a href="http://corndogoncorndog.com">you look stressed. have a corn dog</a>
+<img src="https://www.seekpng.com/png/full/179-1790265_click-here-or-shaq-week.png" width="320px"/> </a>
+</div>
+</div>
 
 
-<script>
-var coll = document.getElementsByClassName("collapsible");
-var i;
+<div id="box2">
+<h2>good songs i'm listening to currently</h2>
+<iframe width="300" height="215" src="https://www.youtube.com/embed/tBNj1iXMWRE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><iframe width="300" height="215" src="https://www.youtube.com/embed/o6ZSMVcmAFg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<br />
+<br />
 
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    }
-  });
-}
-</script>
+<a href="http://corndogoncorndog.com" id="shaq">
+<img src="https://c.tenor.com/_yrssYBX-fcAAAAC/omori-spin.gif" width=100px /> </a>
+
+
+
 
 </body>
 </html>
