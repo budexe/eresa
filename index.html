@@ -117,27 +117,23 @@ body {
     display: block;
     text-align: left;
   }
-/*
-  .header-right {
-    float: none;
-  }*/
 }
 
-#bob {
+#wrap {
   height:200px;
-  position:relative;
+  position: relative;
   margin-bottom: 100px;
   margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
+
 #box1 {
   background: linear-gradient(to top, #005aa7, #fffde4);
-  width: 40%;
-  height: 257px;
   border: 3px solid black;
   border-radius: 10px;
   padding: 10px;
-  float: left;
-  margin-left: 50px;
 }
 
 #box2 {
@@ -145,17 +141,14 @@ body {
   border: 3px solid black;
   border-radius: 10px;
   padding: 10px;
-  margin-right: 50px;
-  margin-left: 50px;
+  flex-grow: 4;
 }
 
 #box3 {
 background: linear-gradient(to right, #636363, #a2ab58);
   border: 3px solid black;
   border-radius: 10px;
-  width: 40%;
   float: right;
-  margin-right: 50px;
 }
 
 </style>
@@ -172,7 +165,7 @@ background: linear-gradient(to right, #636363, #a2ab58);
       </div>
     </div>
 
-<div id="bob">
+<div id="wrap">
 
 <div id="box1">
   <h1>stuff for mister chad</h1>
@@ -180,6 +173,7 @@ background: linear-gradient(to right, #636363, #a2ab58);
   <li><a href="text.html">text page</a></li>
   <li><a href="quotes.html">quote page</a></li>
   <li><a href="boxes.html">box page</a></li>
+  <li><a href="flexbox.html">flex boxes</a></li>
   </ul>
 </div>
 
@@ -188,18 +182,16 @@ background: linear-gradient(to right, #636363, #a2ab58);
 <a href="dummy.html"  id="shaq">
 <img src="https://www.seekpng.com/png/full/179-1790265_click-here-or-shaq-week.png" width="320px"/> </a>
 </div>
-</div>
 
 
 <div id="box2">
 <h2>good songs i'm listening to currently</h2>
-<iframe width="300" height="215" src="https://www.youtube.com/embed/tBNj1iXMWRE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><iframe width="300" height="215" src="https://www.youtube.com/embed/o6ZSMVcmAFg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <iframe width="300" height="215" src="https://www.youtube.com/embed/Nyf6GpdUh8U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="300" height="215" src="https://www.youtube.com/embed/Nyf6GpdUh8U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-<br />
-<br />
+</div>
 
-<div id="box1">
-<h2>advice</h2>
+<br />
+<br />
 
 
 <a href="http://corndogoncorndog.com" id="shaq">
