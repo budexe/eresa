@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>grid page</title>
+<style>
+
+body {
+background-image: url(https://www.toptal.com/designers/subtlepatterns/uploads/blue-snow.png);
+}
+table, th, td {
+  border: 1px solid;
+}
+
+table {
+  width: 100%;
+}
+li {
+  margin-bottom: 20px;
+}
+a {
+  text-decoration: none;
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 15px;
+  background-color: white;
+}
+a:hover{
+background: blue;
+color: white;
+}
+a:active {
+  background:red;
+}
+
+
+body {
+  margin: 0;
+  font-family: serif;
+}
+
+.container {  display: grid;
+  grid-template-columns: 2fr 4.8fr 2fr;
+  grid-template-rows: 0.4fr 2.1fr;
+  grid-auto-columns: 1fr;
+  gap: 10px 10px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "header header header"
+    "side-left center side-right";
+}
+
+.side-left {
+  grid-area: side-left;
+  background: blue;
+}
+
+.center {
+  grid-area: center;
+  background: blue;
+}
+
+.side-right {
+  grid-area: side-right;
+  background: blue;
+}
+
+.header {
+  grid-area: header;
+  background: blue;
+}
+
+
+</style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="side-left">the less you say</div>
+    <div class="center">the more you show</div>
+    <div class="side-right">you show</div>
+    <div class="header">
+      <h1>css grid</h1></div>
+
+  </div>
+  </body>

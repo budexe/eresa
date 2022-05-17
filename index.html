@@ -148,45 +148,65 @@ body {
 background: linear-gradient(to right, #636363, #a2ab58);
   border: 3px solid black;
   border-radius: 10px;
-  float: right;
 }
+
+.container {  display: grid;
+  grid-template-columns: 2fr 4.8fr 2fr;
+  grid-template-rows: 0.4fr 2.1fr;
+  grid-auto-columns: 1fr;
+  gap: 10px 10px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "header header header"
+    "side-left center side-right";
+}
+
+.side-left { grid-area: side-left; }
+
+.center { grid-area: center; }
+
+.side-right { grid-area: side-right; }
+
+.header { grid-area: header; }
+
 
 </style>
 </head>
 
 <body>
-    <div class="header">
-      <img src="My project(6).png" width=100/>
-    by matthew s.
-      <div class="header-right">
-        <a class="active" href="index.html">home</a>
-        <a href="journal.html">journal</a>
-        <a href="about.html">about</a>
-      </div>
-    </div>
 
-<div id="wrap">
+  <div class="container">
+  <div class="side-left">
+  <div id="box1">
+  <h1>other random stuff</h1>
 
-<div id="box1">
-  <h1>stuff for mister chad</h1>
-  <ul>
-  <li><a href="text.html">text page</a></li>
-  <li><a href="quotes.html">quote page</a></li>
-  <li><a href="boxes.html">box page</a></li>
-  <li><a href="flexbox.html">flex boxes</a></li>
-  </ul>
 </div>
 
-
-<div id="box3">
-<a href="dummy.html"  id="shaq">
-<img src="https://www.seekpng.com/png/full/179-1790265_click-here-or-shaq-week.png" width="320px"/> </a>
 </div>
+  <div class="center"><div id="box1">
+    <h1>stuff for mister chad</h1>
+    (just demos and stuff)
+    <ul>
+    <li><a href="text.html">text page</a></li>
+    <li><a href="quotes.html">quote page</a></li>
+    <li><a href="boxes.html">box page</a></li>
+    <li><a href="flexbox.html">flex boxes</a></li>
+    <li><a href="grid.html">grid page</a></li>
+    </ul>
+  </div><div id="box2">
+  <h2>good songs i'm listening to currently</h2>
+  <iframe width="300" height="215" src="https://www.youtube.com/embed/KuvN39H2dRw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><iframe width="300" height="215" src="https://www.youtube.com/embed/MqMHdNaozJo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
 
+</div>
+  <div class="side-right"><div id="box3">
+  <a href="dummy.html"  id="shaq">
+  <img src="https://www.seekpng.com/png/full/179-1790265_click-here-or-shaq-week.png" width="320px"/> </a>
+  </div>
+  </div>
+  <div class="header">by matthew s.
+    <li><a href="journal.html">stupid thoughts</a></li>
 
-<div id="box2">
-<h2>good songs i'm listening to currently</h2>
-<iframe width="300" height="215" src="https://www.youtube.com/embed/Nyf6GpdUh8U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 </div>
 
